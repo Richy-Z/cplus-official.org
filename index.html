@@ -5,6 +5,9 @@
     <title>The C+ Programming Language</title>
     <link rel="icon" type="image/png" href="/branding/logo.png">
 
+    <!-- Meta viewport for mobile scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta name="theme-color" content="#2170c5">
 
     <meta name="description" content="Discover C+, the powerful yet simplified programming language that combines the efficiency of C with a straightforward syntax. Perfect for beginners and experts alike.">
@@ -64,7 +67,7 @@
         max-width: 600px;
         margin: auto;
         text-align: left;
-        font-size: 16px; /* Default font size */
+        font-size: 16px;
     }
     .testimonial {
         border-top: 1px solid #ddd;
@@ -83,10 +86,12 @@
         font-size: 1.1em;
         margin-top: 20px;
     }
-    /* Increase font size for larger screens */
-    @media (min-width: 768px) {
+    /* Adjust for mobile devices */
+    @media (max-width: 768px) {
         .content {
-            font-size: 18px; /* Adjust font size for desktops */
+            width: 100%;
+            padding: 0 5%;
+            font-size: 18px;
         }
     }
 </style>
@@ -165,24 +170,6 @@
     document.getElementById("currentYear").textContent = currentYear;
     document.getElementById("currentYearAgain").textContent = currentYear;
 </script>
-
-<style>
-    .footer {
-        font-size: 12px;
-        color: #666;
-        text-align: center;
-        padding: 20px;
-        margin-top: 30px;
-        background-color: #f9f9f9;
-    }
-    .footer a {
-        color: #2170c5;
-        text-decoration: none;
-    }
-    .footer a:hover {
-        text-decoration: underline;
-    }
-</style>
 
 </body>
 </html>
