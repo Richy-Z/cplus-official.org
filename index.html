@@ -64,6 +64,24 @@
             max-width: 100vw; /* Prevents overflow */
         }
 
+        header .social-icons {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        header .social-icons a {
+            display: inline-block;
+        }
+
+        header .social-icons .social-icon {
+            width: 100px; /* Default size */
+            height: auto;
+            vertical-align: middle;
+            border-radius: 5px;
+        }
+
         img.logo {
             width: 200px;
         }
@@ -126,15 +144,33 @@
             .testimonial {
                 max-width: 90%;
             }
+
+            header .social-icons .social-icon {
+                width: 80px; /* Default size */
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <a href="https://cplus-official.org"><img src="/branding/logo.png" alt="C+ Logo" class="logo"></a>
+    <a href="https://cplus-official.org" id="header">
+        <img src="/branding/logo.png" alt="C+ Logo" class="logo">
+    </a>
     <h1>Welcom to C+ Programing Languge</h1>
     <p>Official Websit for C+ Languge by Very Profesonel Devloper</p>
+
+    <p>join comunitee:</p>
+    <div class="social-icons" id="socials">
+        <a href="https://discord.gg/jxfmt7aHhU" target="_blank">
+            <img src="/images/discord.jpg" alt="Discord" class="social-icon">
+        </a>
+
+        <a href="https://www.facebook.com/cplus.language/" target="_blank">
+            <img src="/images/facebook.png" alt="Facebook" class="social-icon">
+        </a>
+    </div>
+</header>
 </header>
 
 <div class="content">
